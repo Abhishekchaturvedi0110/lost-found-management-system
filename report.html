@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Report Item | Campus Lost & Found</title>
+
+<link rel="stylesheet"
+href="assets/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<a class="brand" href="index.html">
+🔎 Campus Lost & Found
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a class="active"
+href="report.html">
+Report Item
+</a>
+
+<a href="items.html">
+Browse Items
+</a>
+
+<a href="dashboard.html">
+Dashboard
+</a>
+
+<a href="admin.html">
+Admin
+</a>
+
+</nav>
+
+</header>
+
+<main class="container">
+
+<div class="page-head">
+
+<div>
+
+<span class="eyebrow">
+New Report
+</span>
+
+<h1>
+Report a lost or found item
+</h1>
+
+<p>
+Fill in accurate information so the right person
+can identify the item.
+</p>
+
+</div>
+
+</div>
+
+<form id="reportForm"
+class="form-card">
+
+<div class="form-grid">
+
+<label>
+
+Report Type
+
+<select name="type" required>
+
+<option value="Lost">
+Lost
+</option>
+
+<option value="Found">
+Found
+</option>
+
+</select>
+
+</label>
+
+<label>
+
+Item Name
+
+<input
+name="name"
+required
+placeholder="e.g. Black Wallet">
+
+</label>
+
+<label>
+
+Category
+
+<select
+name="category"
+required>
+
+<option>Electronics</option>
+<option>Documents</option>
+<option>Accessories</option>
+<option>Books</option>
+<option>Clothing</option>
+<option>Keys</option>
+<option>Other</option>
+
+</select>
+
+</label>
+
+<label>
+
+Location
+
+<input
+name="location"
+required
+placeholder="e.g. Library">
+
+</label>
+
+<label>
+
+Date
+
+<input
+type="date"
+name="date"
+required>
+
+</label>
+
+<label>
+
+Reporter Name
+
+<input
+name="reporter"
+required
+placeholder="Your name">
+
+</label>
+
+<label>
+
+Contact Email
+
+<input
+type="email"
+name="email"
+required
+placeholder="student@example.com">
+
+</label>
+
+<label>
+
+Unique Identification
+
+<input
+name="identifier"
+placeholder="Colour, brand, serial number, marks...">
+
+</label>
+
+<label class="full">
+
+Description
+
+<textarea
+name="description"
+rows="5"
+required
+placeholder="Describe the item and circumstances...">
+</textarea>
+
+</label>
+
+</div>
+
+<div id="reportMessage"></div>
+
+<button
+class="btn primary"
+type="submit">
+
+Submit Report
+
+</button>
+
+</form>
+
+</main>
+
+<footer>
+Campus Lost & Found • MCA 3rd Semester Minor Project
+</footer>
+
+<script src="assets/app.js"></script>
+
+<script>
+setupReportForm();
+</script>
+
+</body>
+</html>

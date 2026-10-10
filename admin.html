@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Admin Panel | Campus Lost & Found
+</title>
+
+<link rel="stylesheet"
+href="assets/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<a class="brand"
+href="index.html">
+
+🔎 Campus Lost & Found
+
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="report.html">
+Report Item
+</a>
+
+<a href="items.html">
+Browse Items
+</a>
+
+<a href="dashboard.html">
+Dashboard
+</a>
+
+<a class="active"
+href="admin.html">
+
+Admin
+
+</a>
+
+</nav>
+
+</header>
+
+<main class="container">
+
+<div class="page-head">
+
+<div>
+
+<span class="eyebrow">
+Administration
+</span>
+
+<h1>
+Admin dashboard
+</h1>
+
+<p>
+Review reports, claims and item status.
+</p>
+
+</div>
+
+</div>
+
+<div
+class="stats"
+id="adminStats">
+
+</div>
+
+<section class="section">
+
+<h2>
+Reports
+</h2>
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Item</th>
+<th>Type</th>
+<th>Reporter</th>
+<th>Location</th>
+<th>Status</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody
+id="adminReports">
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>
+Claim Requests
+</h2>
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Item</th>
+<th>Claimant</th>
+<th>Reason</th>
+<th>Status</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody
+id="adminClaims">
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<button
+class="btn danger"
+onclick="resetDemo()">
+
+Reset Demo Data
+
+</button>
+
+</main>
+
+<footer>
+Campus Lost & Found • MCA 3rd Semester Minor Project
+</footer>
+
+<script src="assets/app.js"></script>
+
+<script>
+renderAdmin();
+</script>
+
+</body>
+</html>

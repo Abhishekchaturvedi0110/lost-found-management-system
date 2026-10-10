@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Dashboard | Campus Lost & Found
+</title>
+
+<link rel="stylesheet"
+href="assets/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<a class="brand"
+href="index.html">
+
+🔎 Campus Lost & Found
+
+</a>
+
+<nav>
+
+<a href="index.html">
+Home
+</a>
+
+<a href="report.html">
+Report Item
+</a>
+
+<a href="items.html">
+Browse Items
+</a>
+
+<a class="active"
+href="dashboard.html">
+
+Dashboard
+
+</a>
+
+<a href="admin.html">
+Admin
+</a>
+
+</nav>
+
+</header>
+
+<main class="container">
+
+<div class="page-head">
+
+<div>
+
+<span class="eyebrow">
+User Dashboard
+</span>
+
+<h1>
+My reports & claims
+</h1>
+
+<p>
+For this demo, your browser stores the current
+user's reports and claims.
+</p>
+
+</div>
+
+</div>
+
+<div
+class="stats"
+id="dashboardStats">
+
+</div>
+
+<section class="section">
+
+<h2>
+My Reports
+</h2>
+
+<div id="myReports"></div>
+
+</section>
+
+<section class="section">
+
+<h2>
+My Claims
+</h2>
+
+<div id="myClaims"></div>
+
+</section>
+
+</main>
+
+<footer>
+Campus Lost & Found • MCA 3rd Semester Minor Project
+</footer>
+
+<script src="assets/app.js"></script>
+
+<script>
+renderDashboard();
+</script>
+
+</body>
+</html>
